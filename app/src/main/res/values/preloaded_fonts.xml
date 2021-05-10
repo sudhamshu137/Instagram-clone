@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/arimo</item>
+        <item>@font/cabin</item>
+        <item>@font/homemade_apple</item>
+        <item>@font/roboto</item>
+    </array>
+</resources>

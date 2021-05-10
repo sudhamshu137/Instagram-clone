@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feed">
+
+<!--    <ListView-->
+<!--        android:id="@+id/list"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:divider="#000000"-->
+<!--        android:scrollbars="none"-->
+<!--        android:dividerHeight="15dp"-->
+<!--        android:layout_margin="20dp"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#232323"
+        android:id="@+id/rl">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:src="@drawable/addpost"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="addpost"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/inst"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:src="@drawable/profile"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="goprofile"/>
+
+    </RelativeLayout>
+
+<!--        <ListView-->
+<!--            android:id="@+id/list"-->
+<!--            android:layout_below="@+id/rl"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:divider="#000000"-->
+<!--            android:scrollbars="none"-->
+<!--            android:nestedScrollingEnabled="false"-->
+<!--            android:dividerHeight="15dp"-->
+<!--            android:layout_margin="20dp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv"
+        android:scrollbars="none"
+        android:nestedScrollingEnabled="false"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#232323"
+        android:id="@+id/rl">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="12dp"
+            android:src="@drawable/back"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:onClick="goback"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/inst"/>
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/rl"
+        android:id="@+id/ci"
+        android:elevation="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/two"
+        app:civ_border_color="#FFffff"
+        app:civ_border_width="1dp"
+        android:onClick="profilepick"/>
+
+    <TextView
+        android:id="@+id/un"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/ci"
+        android:fontFamily="@font/cabin"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ci"
+        android:layout_margin="20dp"
+        android:id="@+id/list"
+        android:divider="#000000"
+        android:dividerHeight="20dp"/>
+
+</RelativeLayout>
